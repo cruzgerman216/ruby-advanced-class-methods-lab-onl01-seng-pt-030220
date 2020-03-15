@@ -30,7 +30,7 @@ class Song
   end
 
   def self.find_by_name(name)
-    if @@all.include?(name)
+    if @@all.includes?(name)
       name
   end
 end
