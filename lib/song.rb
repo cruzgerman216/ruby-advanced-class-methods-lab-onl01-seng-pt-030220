@@ -50,5 +50,7 @@ class Song
     arr = filename.split(" - ")
     song.name = "tet"
     song.artist_name = arr[1]
+
+    song
   end
 end
