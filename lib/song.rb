@@ -58,7 +58,7 @@ class Song
     arr = filename.split(" - ")
     song.name = arr[1].chomp(".mp3")
     song.artist_name = arr[0]
-    @all << song
+    @@all << song
     song
   end
 end
