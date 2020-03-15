@@ -52,4 +52,13 @@ class Song
     song.artist_name = arr[0]
     song
   end
+
+  def self.create_from_filename
+    song = self.new
+    arr = filename.split(" - ")
+    song.name = arr[1].chomp(".mp3")
+    song.artist_name = arr[0]
+    @all << song
+    song
+  end
 end
